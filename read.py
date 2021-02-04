@@ -2,24 +2,19 @@
 # pip3 install opencv-contrib-python
 
 import cv2 as cv
+import numpy as np
 
-capture = cv.VideoCapture('Videos/shot1.mp4')
+img = cv.imread('Photos/doggo.jpg')
+cv.imshow('Dog', img)
+# capture = cv.VideoCapture('Videos/shot1.mp4')
 
-# Read videos frame by frame
-while 1:
-    isTrue, frame = capture.read()
-    # Show video
-    cv.imshow('Video', frame)
+# Gradients/Edge detection
+gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+cv.imshow('Gray', gray)
 
-    # Wait for key 20 and if letter d is pressed, break
-    if cv.waitKey(20) & 0xFF==ord('d'):
-        break
-
-    print("Exiting...")
-
-capture.release()
-cv.destroyAllWindows()
-
+lap = cv.Laplacian(gray, cv.CV_64F)
+lap = np.uint8(np.absolute(lap))
+cv.imshow('Laplacian', lap)
 
 
 
