@@ -3,10 +3,30 @@
 
 import cv2 as cv
 
-# Read-in image
-img = cv.imread('Photos/doggo.jpg')
+capture = cv.VideoCapture('Videos/shot1.mp4')
 
-# Displays image as new window
-cv.imshow('Dog', img)
+# Read videos frame by frame
+while 1:
+    isTrue, frame = capture.read()
+    # Show video
+    cv.imshow('Video', frame)
+
+    # Wait for key 20 and if letter d is pressed, break
+    if cv.waitKey(20) & 0xFF==ord('d'):
+        break
+
+    print("Exiting...")
+
+capture.release()
+cv.destroyAllWindows()
+
+
+
+
+
+
+
+
+
 # Wait for key press
 cv.waitKey(0)
