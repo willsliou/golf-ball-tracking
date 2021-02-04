@@ -6,7 +6,8 @@ import numpy as np
 
 # img = cv.imread('Photos/doggo.jpg')
 # cv.imshow('Dog', img)
-capture = cv.VideoCapture('Videos/shot1.mp4')
+# capture = cv.VideoCapture('Videos/shot1.mp4')
+capture = cv.VideoCapture('Videos/IMG_5483.MOV')
 
 
 while 1:
