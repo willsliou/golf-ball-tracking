@@ -8,7 +8,8 @@ import numpy as np
 # cv.imshow('Dog', img)
 # capture = cv.VideoCapture('Videos/shot1.mp4')
 # capture = cv.VideoCapture(0)
-capture = cv.VideoCapture('Videos/IMG_5483.MOV')
+# capture = cv.VideoCapture('Videos/IMG_5483.MOV')
+capture = cv.VideoCapture('Videos/IMG_5492.MOV')
 
 """
 
