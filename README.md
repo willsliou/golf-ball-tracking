@@ -1,4 +1,8 @@
 # Golf Ball Tracking
 
 Footage:
-https://youtu.be/gBJPgSBdn2s?t=4
+<br />
+[Original](https://youtu.be/rAFL6Jns1K8)
+<br />
+[Laplacian](https://youtu.be/iNB1BibpbBg)
+
