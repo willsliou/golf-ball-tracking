@@ -12,7 +12,7 @@ import numpy as np
 # capture = cv.VideoCapture(0)
 # capture = cv.VideoCapture('Videos/IMG_5483.MOV')
 # capture = cv.VideoCapture('Videos/IMG_5492_1.MOV')
-capture = cv.VideoCapture('Videos/IMG_5492_1.MOV')
+capture = cv.VideoCapture('Videos/GX010010_53sec.mp4')
 
 """
 
