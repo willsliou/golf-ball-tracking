@@ -3,3 +3,4 @@ opencv_contrib/
 opencv/
 Videos/Laplacian_edge_detection.mov
 Videos/IMG_5492.MOV
+*.mov
