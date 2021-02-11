@@ -38,7 +38,7 @@ while 1:
 
 
 # Laplacian read edge detection
-"""
+
 
 while 1:
     isTrue, frame = capture.read()
@@ -80,8 +80,9 @@ capture.release()
 cv.destroyAllWindows()
 
 
-"""
 
+
+"""
 def find_marker(image):
 	# convert the image to grayscale, blur it, and detect edges
 	gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
@@ -143,7 +144,7 @@ for imagePath in sorted(paths.list_images("images")):
 	cv.imshow("image", image)
 	cv.waitKey(0)
 
-
+"""
 
 
 
